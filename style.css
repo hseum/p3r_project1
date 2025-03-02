@@ -1,0 +1,62 @@
+/* 기본 설정 */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #0A2C6B;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 컨테이너 */
+.container {
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* 타이틀 */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(0, 31, 84, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* 메뉴 스타일 */
+.menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.menu-item:hover {
+    color: #00AEEF;
+    transform: scale(1.1);
+}
+
+/* 기울어진 날짜 UI */
+.date-box {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-20deg);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00AEEF;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona 3 Reload UI</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+
+    <!-- 배경 애니메이션 -->
+    <div class="animated-bg"></div>
+
+    <div class="container">
+        <!-- SVG 프레임 -->
+        <svg class="svg-frame" viewBox="0 0 100 50" preserveAspectRatio="none">
+            <polygon points="0,10 100,0 100,50 0,40" fill="rgba(0, 31, 84, 0.7)"/>
+        </svg>
+
+        <!-- 타이틀 -->
+        <h1 class="title">PERSONA 3 RELOAD</h1>
+
+        <!-- 메뉴 리스트 -->
+        <div class="menu">
+            <a href="#" class="menu-item" onclick="showMessage('NEW GAME')">NEW GAME</a>
+            <a href="#" class="menu-item" onclick="showMessage('LOAD GAME')">LOAD GAME</a>
+            <a href="#" class="menu-item" onclick="showMessage('CONFIG')">CONFIG</a>
+        </div>
+
+        <!-- 메시지 표시 영역 -->
+        <div id="message-box" class="hidden">Selected: <span id="message-text"></span></div>
+
+        <!-- 기울어진 날짜 UI -->
+        <div class="date-box">
+            <span class="year">2009</span>
+            <span class="month">MAY</span>
+            <span class="day">5</span>
+        </div>
+
+        <div id="player"></div>
+        <button id="mute-button" class="mute-button">🔊</button>
+    </div>
+
+    <div id="player"></div>
+    <button id="mute-button" class="mute-button">🔊</button>
+    <script src="script2.js"></script>
+</body>
+
+</html>
